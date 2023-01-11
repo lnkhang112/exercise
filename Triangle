@@ -1,0 +1,16 @@
+fun Triangle(a: Int, b: Int, c: Int)
+{
+    if(a > 0 && b > 0 && c > 0)
+        if((a < b + c) && (b < a + c) && (c < a + b))
+            println("it's a triangle")
+        else
+            println("not yet a triangle")
+    else
+    	println("wrong!!")
+}
+
+fun main() {
+    Triangle(0,2,4)
+    Triangle(1,4,7)
+    Triangle(7,7,7)
+}
